@@ -307,6 +307,7 @@ public class Converters {
 
     // Omitted (can be introduced later): card.checks, card.threeDSecureUsage, card.wallet
 
+    wm.putString("cardId"), card.cardId);
     wm.putString("brand", card.brand);
     wm.putString("country", card.country);
     wm.putInt("expMonth", card.expiryMonth);
