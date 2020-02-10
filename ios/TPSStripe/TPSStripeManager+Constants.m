@@ -23,6 +23,7 @@ TPSStripeBridgeKeyDeclare(PaymentMethod, customerId);
 TPSStripeBridgeKeyDeclare(PaymentMethod, metadata);
 
 TPSStripeBridgeTypeDefine(PaymentMethodCard);
+TPSStripeBridgeKeyDeclare(PaymentMethodCard, cardId);
 TPSStripeBridgeKeyDeclare(PaymentMethodCard, brand);
 TPSStripeBridgeKeyDeclare(PaymentMethodCard, country);
 TPSStripeBridgeKeyDeclare(PaymentMethodCard, expMonth);

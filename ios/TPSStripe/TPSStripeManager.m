@@ -1443,6 +1443,7 @@ RCT_EXPORT_METHOD(openApplePaySetup) {
         NSMutableDictionary *cardDetails = [@{} mutableCopy];
         [result setValue:cardDetails forKey:@"cardDetails"];
 
+        [cardDetails setValue:source.cardDetails.cardId forKey:@"cardId"];
         [cardDetails setValue:source.cardDetails.last4 forKey:@"last4"];
         [cardDetails setValue:@(source.cardDetails.expMonth) forKey:@"expMonth"];
         [cardDetails setValue:@(source.cardDetails.expYear) forKey:@"expYear"];
